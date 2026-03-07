@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Layout from './components/Layout';
 import HackerSplash from './components/HackerSplash';
 import Hero from './sections/Hero';
