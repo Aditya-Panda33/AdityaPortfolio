@@ -62,7 +62,7 @@ const TerminalApp: React.FC = () => {
                 output = "Email: adityaponda2020@gmail.com | Phone: 7846985364";
                 break;
             case 'github':
-                output = <a href="https://github.com/adityaponda" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">github.com/adityaponda</a>;
+                output = <a href="https://github.com/Aditya-Panda33" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">github.com/Aditya-Panda33</a>;
                 break;
             case 'resume':
                 output = <a href="/Aditya_Panda_Resume.pdf" download className="underline hover:text-white">Click here to download Aditya_Panda_Resume.pdf</a>;

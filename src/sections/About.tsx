@@ -24,10 +24,10 @@ const About: React.FC = () => {
                     <div className="grid md:grid-cols-3 gap-8 text-gray-300 font-mono text-sm md:text-base leading-relaxed">
                         <div className="md:col-span-2 space-y-6">
                             <p>
-                                <span className="text-cyber-blue font-bold">Aditya Panda</span> is a Computer Science undergraduate specializing in Artificial Intelligence and Machine Learning at GIET University. He has strong interests in cybersecurity, ethical hacking, and machine learning based security systems.
+                                <span className="text-cyber-blue font-bold">Aditya Panda</span> is a Computer Science undergraduate specializing in Artificial Intelligence and Machine Learning at GIET University. I have a strong interests in cybersecurity, ethical hacking, and machine learning based security systems.
                             </p>
                             <p>
-                                He enjoys building practical applications that combine machine learning with cybersecurity concepts, such as fake account detection and phishing detection systems.
+                                I enjoy building practical applications that combine machine learning with cybersecurity concepts, such as fake account detection and phishing detection systems.
                             </p>
                             <p className="text-neon-green/80">
                                 &gt; Actively seeking opportunities to contribute to real-world systems through internships in machine learning, cybersecurity, and software development.

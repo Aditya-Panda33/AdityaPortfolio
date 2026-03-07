@@ -42,13 +42,13 @@ const Contact: React.FC = () => {
                         </div>
                     </a>
 
-                    <a id="github" href="https://github.com/adityaponda" target="_blank" rel="noopener noreferrer" className="glassmorphism p-6 flex items-center gap-6 group hover:border-purple-400/60 transition-colors border border-purple-400/20 rounded-sm">
+                    <a id="github" href="https://github.com/Aditya-Panda33" target="_blank" rel="noopener noreferrer" className="glassmorphism p-6 flex items-center gap-6 group hover:border-purple-400/60 transition-colors border border-purple-400/20 rounded-sm">
                         <div className="p-4 bg-purple-400/10 rounded-full group-hover:bg-purple-400/20 transition-colors">
                             <Github className="text-purple-400" size={28} />
                         </div>
                         <div>
                             <h3 className="text-sm text-gray-400 font-mono mb-1">GITHUB</h3>
-                            <p className="font-bold text-white tracking-wide">github.com/adityaponda</p>
+                            <p className="font-bold text-white tracking-wide">github.com/Aditya-Panda33</p>
                         </div>
                     </a>
 
