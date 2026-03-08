@@ -19,11 +19,17 @@ const TerminalApp: React.FC = () => {
             )
         }
     ]);
+    const terminalBodyRef = useRef<HTMLDivElement>(null);
     const bottomRef = useRef<HTMLDivElement>(null);
     const inputRef = useRef<HTMLInputElement>(null);
 
     useEffect(() => {
-        bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+        if (terminalBodyRef.current) {
+            terminalBodyRef.current.scrollTo({
+                top: terminalBodyRef.current.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
     }, [logs]);
 
     const handleCommand = (e: React.FormEvent) => {
@@ -44,6 +50,8 @@ const TerminalApp: React.FC = () => {
                         <li><strong className="text-neon-green">projects</strong> - Shows prominent projects</li>
                         <li><strong className="text-neon-green">contact</strong>  - Returns contact information</li>
                         <li><strong className="text-neon-green">github</strong>   - Displays GitHub link</li>
+                        <li><strong className="text-neon-green">linkedin</strong> - Displays LinkedIn profile link</li>
+                        <li><strong className="text-neon-green">tryhackme</strong>- Displays TryHackMe profile link</li>
                         <li><strong className="text-neon-green">resume</strong>   - Provides resume download link</li>
                         <li><strong className="text-neon-green">clear</strong>    - Clears the terminal output</li>
                     </ul>
@@ -59,10 +67,16 @@ const TerminalApp: React.FC = () => {
                 output = "1. Social Media Fake Account Detection\n2. PhishScanner\n3. PassForge (Ongoing)";
                 break;
             case 'contact':
-                output = "Email: adityaponda2020@gmail.com | Phone: 7846985364";
+                output = "Email: adityaponda2020@gmail.com | TryHackMe: tryhackme.com/p/ponda";
                 break;
             case 'github':
                 output = <a href="https://github.com/Aditya-Panda33" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">github.com/Aditya-Panda33</a>;
+                break;
+            case 'linkedin':
+                output = <a href="https://www.linkedin.com/in/aditya-panda-04048b321/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">linkedin.com/in/aditya-panda-04048b321</a>;
+                break;
+            case 'tryhackme':
+                output = <a href="https://tryhackme.com/p/ponda" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">tryhackme.com/p/ponda</a>;
                 break;
             case 'resume':
                 output = <a href="/Aditya_Panda_Resume.pdf" download className="underline hover:text-white">Click here to download Aditya_Panda_Resume.pdf</a>;
@@ -104,7 +118,10 @@ const TerminalApp: React.FC = () => {
                 </div>
 
                 {/* Terminal Body */}
-                <div className="p-4 h-96 overflow-y-auto font-mono text-sm md:text-base terminal-scrollbar">
+                <div
+                    ref={terminalBodyRef}
+                    className="p-4 h-96 overflow-y-auto font-mono text-sm md:text-base terminal-scrollbar"
+                >
                     {logs.map((log, index) => (
                         <div key={index} className="mb-4">
                             <div className="flex gap-2 text-neon-green">

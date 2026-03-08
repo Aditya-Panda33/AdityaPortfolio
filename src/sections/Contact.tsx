@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, Linkedin, Github } from 'lucide-react';
+import { Mail, Linkedin, Github } from 'lucide-react';
+import { SiTryhackme } from 'react-icons/si';
 
 const Contact: React.FC = () => {
     return (
@@ -32,13 +33,13 @@ const Contact: React.FC = () => {
                         </div>
                     </a>
 
-                    <a href="tel:7846985364" className="glassmorphism p-6 flex items-center gap-6 group hover:border-cyber-blue/60 transition-colors border border-cyber-blue/20 rounded-sm">
-                        <div className="p-4 bg-cyber-blue/10 rounded-full group-hover:bg-cyber-blue/20 transition-colors">
-                            <Phone className="text-cyber-blue" size={28} />
+                    <a id="tryhackme" href="https://tryhackme.com/p/ponda" target="_blank" rel="noopener noreferrer" className="glassmorphism p-6 flex items-center gap-6 group hover:border-red-500/60 transition-colors border border-red-500/20 rounded-sm">
+                        <div className="p-4 bg-red-500/10 rounded-full group-hover:bg-red-500/20 transition-colors">
+                            <SiTryhackme className="text-red-500" size={28} />
                         </div>
                         <div>
-                            <h3 className="text-sm text-gray-400 font-mono mb-1">PHONE</h3>
-                            <p className="font-bold text-white tracking-wide">+91 78469 85364</p>
+                            <h3 className="text-sm text-gray-400 font-mono mb-1">TRYHACKME</h3>
+                            <p className="font-bold text-white tracking-wide">tryhackme.com/p/ponda</p>
                         </div>
                     </a>
 
