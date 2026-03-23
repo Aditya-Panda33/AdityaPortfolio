@@ -54,6 +54,7 @@ const TerminalApp: React.FC = () => {
                         <li><strong className="text-neon-green">tryhackme</strong>- Displays TryHackMe profile link</li>
                         <li><strong className="text-neon-green">resume</strong>   - Provides resume download link</li>
                         <li><strong className="text-neon-green">clear</strong>    - Clears the terminal output</li>
+                        <i className="text-gray-600 text-xs">...and maybe some hidden ones?</i>
                     </ul>
                 );
                 break;
@@ -87,6 +88,17 @@ const TerminalApp: React.FC = () => {
                 return;
             case 'sudo':
                 output = <span className="text-red-500">Nice try! This incident will be reported.</span>;
+                break;
+            case 'ctf':
+                output = (
+                    <div className="text-yellow-400">
+                        <p className="text-red-500 font-bold text-lg mb-2 blink">SYSTEM WARNING: UNKNOWN PROTOCOL INITIATED</p>
+                        <p>REDIRECTING TO SECURE SERVER...</p>
+                    </div>
+                );
+                setTimeout(() => {
+                    window.location.href = '/ctf';
+                }, 1500);
                 break;
             default:
                 output = <span className="text-red-400">Command not found: '{cmd}'. Type 'help' for available commands.</span>;

@@ -12,12 +12,12 @@ const Skills: React.FC = () => {
         {
             title: "Cybersecurity",
             icon: <ShieldAlert className="text-red-400" />,
-            skills: ["Computer Networks", "Linux", "Ethical Hacking Fundamentals"]
+            skills: ["Computer Networks", "Linux", "Ethical Hacking Fundamentals", "Open-Source Intelligence"]
         },
         {
             title: "Machine Learning",
             icon: <Cpu className="text-neon-green" />,
-            skills: ["NumPy", "Pandas", "Scikit-Learn"]
+            skills: ["NumPy", "Pandas", "Scikit-Learn", "TensorFlow"]
         },
         {
             title: "Data Structures",
@@ -27,7 +27,7 @@ const Skills: React.FC = () => {
         {
             title: "Tools",
             icon: <Wrench className="text-yellow-400" />,
-            skills: ["Git", "Jupyter Notebook", "Kali Linux"]
+            skills: ["Git", "Jupyter Notebook", "Kali Linux", "OSINT tools", "Docker"]
         }
     ];
 
