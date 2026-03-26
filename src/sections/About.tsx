@@ -24,7 +24,7 @@ const About: React.FC = () => {
                     <div className="grid md:grid-cols-3 gap-8 text-gray-300 font-mono text-sm md:text-base leading-relaxed">
                         <div className="md:col-span-2 space-y-6">
                             <p>
-                                <span className="text-cyber-blue font-bold">Aditya Panda</span> is a Computer Science undergraduate specializing in Artificial Intelligence and Machine Learning at GIET University. I have a strong interests in cybersecurity, ethical hacking, and machine learning based security systems.
+                                <span className="text-cyber-blue font-bold">Aditya Panda</span> is a Computer Science undergraduate specializing in Artificial Intelligence and Machine Learning at GIET University. I am currently the Technical Co-Lead of the Cybersecurity club at GIET University, with strong interests in ethical hacking and machine learning based security systems.
                             </p>
                             <p>
                                 I enjoy building practical applications that combine machine learning with cybersecurity concepts, such as fake account detection and phishing detection systems.

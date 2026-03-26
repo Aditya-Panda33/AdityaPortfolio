@@ -59,25 +59,25 @@ const TerminalApp: React.FC = () => {
                 );
                 break;
             case 'about':
-                output = "Aditya Panda: Cybersecurity Enthusiast | ML Developer | CSE (AIML) Student at GIET University. Actively seeking internships.";
+                output = "Aditya Panda: Technical Co-Lead of Cybersecurity club GIET University | ML Developer | CSE (AIML) Student. Actively seeking internships.";
                 break;
             case 'skills':
                 output = "Programming: C, C++, Java, Python | Cyber: Network, Linux, Ethical Hacking | ML: NumPy, Pandas, Scikit-Learn";
                 break;
             case 'projects':
-                output = "1. Social Media Fake Account Detection\n2. PhishScanner\n3. PassForge (Ongoing)";
+                output = "1. Social Media Fake Account Detection\n2. PhishScanner\n3. PassForge";
                 break;
             case 'contact':
                 output = "Email: adityaponda2020@gmail.com | TryHackMe: tryhackme.com/p/ponda";
                 break;
             case 'github':
-                output = <a href="https://github.com/Aditya-Panda33" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">github.com/Aditya-Panda33</a>;
+                output = <a href="https://github.com/Aditya-Panda33" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">GitHub Profile</a>;
                 break;
             case 'linkedin':
-                output = <a href="https://www.linkedin.com/in/aditya-panda-04048b321/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">linkedin.com/in/aditya-panda-04048b321</a>;
+                output = <a href="https://www.linkedin.com/in/adityapanda33/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">LinkedIn Profile</a>;
                 break;
             case 'tryhackme':
-                output = <a href="https://tryhackme.com/p/ponda" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">tryhackme.com/p/ponda</a>;
+                output = <a href="https://tryhackme.com/p/ponda" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">TryHackMe Profile</a>;
                 break;
             case 'resume':
                 output = <a href="/Aditya_Panda_Resume.pdf" download className="underline hover:text-white">Click here to download Aditya_Panda_Resume.pdf</a>;

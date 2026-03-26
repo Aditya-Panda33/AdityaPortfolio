@@ -18,7 +18,7 @@ const Projects: React.FC = () => {
         },
         {
             title: "PassForge",
-            status: "ONGOING",
+            status: "COMPLETED",
             desc: "A password generator and password strength analyzer. It generates strong passwords and evaluates existing passwords to determine whether they are strong or weak.",
             tech: ["Python", "Security logic"]
         }

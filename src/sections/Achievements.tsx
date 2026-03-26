@@ -29,6 +29,21 @@ const Achievements: React.FC = () => {
                             Received the Jury Award at <strong className="text-white">Srujanathon</strong> during the tech fest <strong className="text-white">Srujan 4.0</strong> for technical innovation.
                         </p>
                     </div>
+
+                    <div className="glassmorphism p-8 border border-neon-green/30 rounded-sm relative group overflow-hidden mt-8">
+                        <div className="absolute top-0 right-0 w-16 h-16 bg-neon-green/10 rounded-bl-full group-hover:scale-150 transition-transform duration-500"></div>
+
+                        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-4">
+                            <div>
+                                <h3 className="text-2xl font-bold text-neon-green mb-1">Technical Co-Lead</h3>
+                                <p className="text-white font-bold tracking-wide">Cyber Security Club, GIET University</p>
+                            </div>
+                        </div>
+
+                        <p className="text-gray-300 font-mono leading-relaxed mt-4 border-l-2 border-neon-green/50 pl-4">
+                            Technical Co-Lead at the Cyber Security Club, GIET University — leading technical initiatives, cybersecurity projects, and CTF challenges.
+                        </p>
+                    </div>
                 </motion.div>
 
                 <motion.div

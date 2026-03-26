@@ -28,7 +28,6 @@ const Contact: React.FC = () => {
                             <Mail className="text-neon-green" size={28} />
                         </div>
                         <div>
-                            <h3 className="text-sm text-gray-400 font-mono mb-1">EMAIL</h3>
                             <p className="font-bold text-white tracking-wide">adityaponda2020@gmail.com</p>
                         </div>
                     </a>
@@ -38,8 +37,7 @@ const Contact: React.FC = () => {
                             <SiTryhackme className="text-red-500" size={28} />
                         </div>
                         <div>
-                            <h3 className="text-sm text-gray-400 font-mono mb-1">TRYHACKME</h3>
-                            <p className="font-bold text-white tracking-wide">tryhackme.com/p/ponda</p>
+                            <p className="font-bold text-white tracking-wide">TRYHACKME</p>
                         </div>
                     </a>
 
@@ -48,21 +46,16 @@ const Contact: React.FC = () => {
                             <Github className="text-purple-400" size={28} />
                         </div>
                         <div>
-                            <h3 className="text-sm text-gray-400 font-mono mb-1">GITHUB</h3>
-                            <p className="font-bold text-white tracking-wide">github.com/Aditya-Panda33</p>
+                            <p className="font-bold text-white tracking-wide">GITHUB</p>
                         </div>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/aditya-panda-04048b321/" target="_blank" rel="noopener noreferrer" className="glassmorphism p-6 flex items-center gap-6 group hover:border-blue-500/60 transition-colors border border-blue-500/20 rounded-sm">
+                    <a href="https://www.linkedin.com/in/adityapanda33/" target="_blank" rel="noopener noreferrer" className="glassmorphism p-6 flex items-center gap-6 group hover:border-blue-500/60 transition-colors border border-blue-500/20 rounded-sm">
                         <div className="p-4 bg-blue-500/10 rounded-full group-hover:bg-blue-500/20 transition-colors">
                             <Linkedin className="text-blue-500" size={28} />
                         </div>
                         <div>
-                            <h3 className="text-sm text-gray-400 font-mono mb-1">LINKEDIN</h3>
-                            <p className="font-bold text-white tracking-wide flex flex-col md:block">
-                                <span>aditya-panda-</span>
-                                <span>04048b321</span>
-                            </p>
+                            <p className="font-bold text-white tracking-wide">LINKEDIN</p>
                         </div>
                     </a>
                 </div>
